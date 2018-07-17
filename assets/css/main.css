@@ -3395,12 +3395,14 @@ input, select, textarea {
 
 	}
 
-
 /* ** custom edits ** */
-
-.carousel-container img {
+.carousel-container .image-content {
   width: 50%;
+	height: 100%;
   display: block;
+	background-image: url("../../images/band3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
   -webkit-animation-name: animate-image;
   -webkit-animation-duration: 2s;
   -webkit-animation-fill-mode: forwards;
@@ -3417,7 +3419,7 @@ input, select, textarea {
 
 .carousel-container p:first-of-type {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: inline-block;
   text-align: right;
   text-transform: uppercase;
@@ -3427,16 +3429,16 @@ input, select, textarea {
 
 .carousel-container p:last-of-type {
   margin: 0;
-  font-size: .8rem;
+  font-size: .6rem;
   display: inline-block;
   text-align: right;
   text-transform: uppercase;
-  font-weight: bold;
   width: 100%;
 }
 
 .carousel-container {
   border: 1px solid black;
+	background-color: white;
   width: 50vw;
   height: 50vh;
   display: flex;
@@ -3462,7 +3464,7 @@ input, select, textarea {
   }
 }
 
-.major {
+h1.major {
 	-webkit-animation-name: animate-title;
 	-webkit-animation-duration: 3s;
 	-webkit-animation-fill-mode: forwards;
@@ -3508,19 +3510,44 @@ i {
 		font-size: 1rem;
 		padding-top: 2rem;
 }
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 18rem;}
+}
+
+#cursor-1 {
+  animation: blink 1s infinite;
+	color: black;
+}
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+
 @media screen and (max-width: 736px) {
 	.line-1 {
 		padding-top: 0;
 	}
+
 	h1.major {
 		margin-bottom: .6rem;
 	}
+
 	.carousel-container{
 		width: 100vw;
 	}
+
 	.carousel-navigation{
 		padding-right: 1rem;
 	}
+
 	i{
 		-webkit-transform: rotate(90deg);
 		-moz-transform: rotate(90deg);
@@ -3537,25 +3564,4 @@ i {
 	    -webkit-transform: translate(30px, 60px);
 	  }
 	}
-}
-}
-
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 18rem;}
-}
-
-#cursor-1 {
-  animation: blink 1s infinite;
-	color: black;
-}
-
-@keyframes blink {
-  to {
-    opacity: .0;
-  }
 }
