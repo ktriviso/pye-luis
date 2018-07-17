@@ -1024,6 +1024,7 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -0.75rem;
 		padding-left: 0;
+		position: relative;
 	}
 
 		ul.actions li {
