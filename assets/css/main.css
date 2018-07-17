@@ -3492,7 +3492,6 @@ h1.major {
 
 .carousel-navigation {
 	text-align: right;
-	margin-right: 2rem;
 }
 
 .line-1{
@@ -3544,7 +3543,7 @@ h1.major {
 	}
 ``
 	.carousel-navigation{
-		padding-right: 1rem;
+		padding-right: 2rem;
 	}
 
 	.arrow{
