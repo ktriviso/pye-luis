@@ -3619,8 +3619,8 @@ h1.major {
 
 .led {
   position: absolute;
-  left: 5px; top: 10px;
-  width: 10px; height: 10px;
+  left: 5px; top: 8px;
+  width: 8px; height: 8px;
   border-radius: 50%;
   background-color: rgb(255, 136, 115);
   box-shadow: inset 0px 1px 0px rgba(0,0,0,.1);
@@ -3685,7 +3685,7 @@ h1.major {
 .video {
 	position: relative;
 	color: #0569b1;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .arrow {
