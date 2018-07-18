@@ -5,8 +5,6 @@ window.onload = function() {
 		sizeVariations: 5,
 		maxParticles: 500
 	});
-
-
 }
 
 document.querySelectorAll('.carousel-navigation').forEach((elem) => {
